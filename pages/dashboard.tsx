@@ -9,11 +9,15 @@ function Dashboard() {
 
   return (
     <div className="min-h-screen flex bg-gray-50 text-gray-900">
-      
-      {/* Sidebar */}
       <aside className="w-64 bg-white border-r shadow-sm hidden md:flex flex-col">
         <div className="flex items-center justify-center h-20 border-b">
-          <Image src="/g-icon-final.png" alt="GO Icon" width={40} height={40} />
+          <Image
+            src="/g-icon-final.png"
+            alt="GO Icon"
+            width={40}
+            height={40}
+            unoptimized
+          />
         </div>
         <nav className="flex-1 px-4 py-6 space-y-4 text-sm">
           <Link href="#"><span className="block hover:text-blue-600 font-medium">Dashboard</span></Link>
@@ -23,9 +27,7 @@ function Dashboard() {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 flex flex-col">
-        {/* Top Nav */}
         <header className="h-16 bg-white shadow-sm px-6 flex items-center justify-between border-b">
           <h1 className="text-xl font-bold">Galaxy Outreach</h1>
           <Link href="/">
@@ -33,13 +35,11 @@ function Dashboard() {
           </Link>
         </header>
 
-        {/* Page Content */}
         <section className="p-6">
           <h2 className="text-2xl font-bold mb-2">Welcome to your dashboard</h2>
           <p className="text-gray-600">This is your Galaxy Outreach control center.</p>
         </section>
       </main>
-
     </div>
   )
 }
